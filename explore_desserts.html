@@ -5,58 +5,45 @@
 <title>EXPLORE DESSERTS</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
-<body>
+<body>  
+    <div class="container">
+        <section id="topBar"></section><!-- the top green part -->
 
-<!-- Start wrapper -->
-<div class="container">
-<!-- the top green part -->
-<section id="topBar"></section>
-
-<!--start header-->
-<header class="mainHeader">
-            <!--London Bakerology logo-->
+        <header class="mainHeader">
+            <h1 class="hidden">London Bakerology</h1>
             <div id="logo">
-              <h1 class="hidden">London Bakerology Logo</h1>
-              <img src="images/london_bakerology_logo.svg" width="90" height="104">
+                <embed src="images/london_bakerology_logo.svg"></embed>
             </div>
-
-            <!--Start social media-->
             <section class="headerRight">
+                <section class="socialMedia">
+                    <h2 class="hidden">Social Media</h2>
+                    <!--twitter-->            
+                        <a href="http://www.twitter.com">
+                        <img src="images/twitter.svg" alt="Twitter" id="twitter">  
+                        </a>            
 
-              <div class="socialMedia">
-                <h2 class="hidden">Social Media</h2>
+                    <!--facebook-->
+                        <a href="http://www.facebook.com">
+                        <img src="images/facebook.svg" alt="Facebook" id="facebook">
+                        </a>
 
-                <!--social media icons-->
-                <section class="iconNav">
-                <!--twitter-->
-                <a href="http://www.twitter.com">
-                <img src="images/twitter.svg" alt="Twitter" id="twitter">
-                </a>
+                    <!--Instagram-->
+                        <a href="http://www.instagram.com">
+                        <img src="images/instagram.svg" alt="Instagram" id="instagram">
+                        </a>      
+                </section> <!--End social media-->
 
-                <!--facebook-->
-                <a href="http://www.facebook.com">
-                <img src="images/facebook.svg" alt="Facebook" id="facebook">
-                </a>
-
-                <!--Instagram-->
-                <a href="http://www.instagram.com">
-                <img src="images/instagram.svg" alt="Instagram" id="instagram">
-                </a>
-              </section> <!-- End social media icons-->
-            </div> <!--End social media-->
-
-                <!--navigation-->
                 <nav class="mainNav">
-                  <h2 class="hidden">Main Navigation</h2>
-                  <ul>
-                      <li><a href="home.html">HOME</a></li>
-                      <li><a href="explore_desserts.html">EXPLORE DESSERTS</a></li>
-                      <li><a href="#">ABOUT</a></li>
-                      <li><a href="contact.html">CONTACT</a></li>
-                  </ul>
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="explore_desserts.html">EXPLORE DESSERTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
                 </nav>
-            </section> <!--End navigation-->
-</header><!--End header-->
+            </section>
+        </header>
 
 <div class="mainPosts">
             <section class="post1">
@@ -78,16 +65,26 @@
         </div>
 
         <footer class="mainFooter">
-            <div class="footerNav">
-                <p>Footer Nav</p>
-            </div>
-            <div class="copyRight">
-                <p>Copyright Text and Logo</p>
-            </div>
+            <nav class="mainFooterNav">
+                <h2 class="hidden">Main Footer Navigation</h2>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="explore_desserts.html">EXPLORE DESSERTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </nav>
+            <section class="copyRight">
+                <embed src="images/london_bakerology_symbol.svg" id="london bakerology symbol"></embed>
+                <div class="copyrightTexts">
+                <h4 class="hidden">London Bakerology.©2018. All Rights Reserved.</h4>
+                <p id="CRtop">London Bakerology.©2018.</p>
+                <p id="CRbot">All Rights Reserved.</p>
+                </div>
+            </section>
         </footer>
 
     </div>
     <!--End wrapper  -->
-<!-- <script src="js/main.js"></script> -->
 </body>
 </html>
