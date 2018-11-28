@@ -79,11 +79,11 @@ a:hover, a:active
 
 .mainHeader
 {
-	margin-top: 24px;
+	margin-top: 40px;
 	margin-bottom: 35px;
 	margin-right: 21px;
-	margin-left: 40px;
-	height: 183px;
+	margin-left: 70px;
+/*	height: 183px;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -105,47 +105,36 @@ a:hover, a:active
 
 .socialMedia
 {
-	width: 137px; /*I added it  */
-	height: 51px; /*I added it  */
+	width: 160px; /*I added it  */
+/*	height: 51px;*/ /*I added it  */
 	margin-left: auto;
 	/* margin-bottom: 2px; */
 	/*line-height: 40px;*/
 	align-self: flex-end;
-}
-
-.iconNav
-{
-	/* list-style-type: none; */
-	padding: 0;
-}
-
-.iconNav li
-{
-	display: inline;
-	/*margin-right: 10px;*/
+	margin-right: 0;
+	margin-bottom: 20px;
 }
 
  /* social media icons*/
 /*nov 25th we were trying to figure out the social media icons*/
 #twitter, #facebook, #instagram /*I solved the problem  */
 {
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 	background-color: #053e68;
 	border-radius: 80%; /*I changed the size */
 	padding: 4px; /*I added padding */
 	margin-left: 15px;
-	margin-top: 51px;/*I changed the size */
+/*	margin-top: 51px;*//*I changed the size */
 
 }
 
 /* navigation */
 .mainNav
 {/* Font styles from Google fonts */
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-	font-weight:normal;
-	font-size: 12px;
-	line-height: 40px;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
 	display: inline;
 	margin-left: auto;
 	text-align: right;
@@ -153,11 +142,26 @@ a:hover, a:active
 
 .mainNav ul
 {
-  list-style-type: none;
-  padding: 0;
-
+	list-style-type: none;
+	padding: 0;
 }
 
+.mainNav ul li
+{
+	display: inline;
+}
+
+.mainNav ul li a
+{
+	color: #053e68;
+	padding: 14px 17px;
+}
+
+.mainNav ul li a:hover
+{
+	border: solid 1px #73c2b3;
+	color: #73c2b3;
+}
 
 .mainFooter
 {
@@ -166,26 +170,72 @@ a:hover, a:active
 	margin-right: 20px;
 	display: flex;
 	flex-direction: row;
-  justify-content: space-between;
-  background-color: #f5f1ee;
+	justify-content: space-between;
+	background-color: #f5f1ee;
 }
 
-
-
-.footerNav
-{
-	width: 500px;
-	line-height: 40px;
+.mainFooterNav
+{/* Font styles from Google fonts */
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline;
+	margin-right: auto;
+	text-align: right;
+	align-self: flex-start;
 	margin-top: 40px;
+}
+
+.mainFooterNav ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.mainFooterNav ul li
+{
+	display: inline;
+}
+
+.mainFooterNav ul li a
+{
+	color: #053e68;
+	padding: 14px 17px;
+}
+
+.mainFooterNav ul li a:hover
+{
+	border: solid 1px #73c2b3;
+	color: #73c2b3;
 }
 
 .copyRight
 {
-	width: 250px;
-	line-height: 48px;
-	margin-top: 35px;
+	display: flex;
+	flex-direction: row;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}
+.copyRight embed
+{
+	width: 45px;
+	margin-top: 31px;
+/*	line-height: 48px;*/
 }
 
+.copyRight p
+{
+	background: none;
+	color: #053e68;
+	margin-left: 5px;
+	text-align: center;
+}
+
+#CRtop
+{
+	margin-top: 46px;
+}
 /*Home Page*/
 .mainHome
 {
