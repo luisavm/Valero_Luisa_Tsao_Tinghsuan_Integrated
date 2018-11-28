@@ -1,55 +1,58 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Font styles from Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
 /*Remove this rule, this is only for demo purposes to make the boxes black with white text
 The line height on the <p> tag gives each box a height value*/
-
 p
 {
 	color: #fff;
 	background: #aadad1;
 	text-align: center;
 	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
 div,p,body,header,footer,section,article,nav
-{ 
-	margin: 0; 
-	padding: 0; 
-}	
+{
+	margin: 0;
+	padding: 0;
+}
 
-img 
-{ 
+img
+{
 	border: none; /*Remove border if image is a link*/
-	margin: 0; 
-	padding: 0; 
+	margin: 0;
+	padding: 0;
 }
 
 /*html selectors*/
 
-body 
+body
 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 14px;
 	color: #333;
 }
 
 
-/*a:link is for not visited(standard unclicked link), 
+/*a:link is for not visited(standard unclicked link),
 a:visited is for visited, and just a applies to both.*/
 /*a will also style anchor links*/
 
-a:link, a:visited 
-{ 
- 	text-decoration:none; 	
+a:link, a:visited
+{
+ 	text-decoration:none;
 }
 
-a:hover, a:active 
-{ 
-	text-decoration:none; 
+a:hover, a:active
+{
+	text-decoration:none;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -59,12 +62,9 @@ a:hover, a:active
 	display: none;
 }
 
-/*Site Container*/ 
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
-
+/*Site Container*/
 /*Header and Footer*/
-.container 
+.container
 {
 	margin: 0 auto;
 	width: 960px;
@@ -83,6 +83,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-bottom: 35px;
 	margin-right: 21px;
 	margin-left: 40px;
+	height: 183px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -90,8 +91,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #logo
 {
-	width: 140px;
-	/*line-height: 165px;*/
+	/* width: 90px;
+	height: 104px; */
 }
 
 .headerRight
@@ -104,17 +105,18 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 .socialMedia
 {
-	/*width: 140px;*/
-	/*margin-left: auto;*/
-	margin-bottom: 20px;
+	width: 137px; /*I added it  */
+	height: 51px; /*I added it  */
+	margin-left: auto;
+	/* margin-bottom: 2px; */
 	/*line-height: 40px;*/
 	align-self: flex-end;
 }
 
 .iconNav
 {
-	list-style-type: none;
-	/*padding: 0;*/
+	/* list-style-type: none; */
+	padding: 0;
 }
 
 .iconNav li
@@ -123,46 +125,61 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	/*margin-right: 10px;*/
 }
 
-
-
-
-
+ /* social media icons*/
 /*nov 25th we were trying to figure out the social media icons*/
-
-#twitter/*, #facebook, #instagram*/
+#twitter, #facebook, #instagram /*I solved the problem  */
 {
 	width: 20px;
 	height: 20px;
 	background-color: #053e68;
-	border-radius: 50%;
+	border-radius: 80%; /*I changed the size */
+	padding: 4px; /*I added padding */
 	margin-left: 15px;
+	margin-top: 51px;/*I changed the size */
+
 }
 
-.mainNav 
-{
-	width: 500px;
+/* navigation */
+.mainNav
+{/* Font styles from Google fonts */
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+	font-weight:normal;
+	font-size: 12px;
 	line-height: 40px;
+	display: inline;
+	margin-left: auto;
+	text-align: right;
 }
 
-.mainFooter 
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+
+}
+
+
+.mainFooter
 {
 	padding-bottom: 70px;
 	margin-left: 20px;
 	margin-right: 20px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-between;
-  	background-color: #f5f1ee;
+  justify-content: space-between;
+  background-color: #f5f1ee;
 }
 
-.footerNav 
+
+
+.footerNav
 {
 	width: 500px;
 	line-height: 40px;
 	margin-top: 40px;
 }
 
-.copyRight 
+.copyRight
 {
 	width: 250px;
 	line-height: 48px;
