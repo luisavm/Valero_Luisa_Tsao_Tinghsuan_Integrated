@@ -249,28 +249,133 @@ a:hover, a:active
 
 .topBanner
 {
-	margin-top: 35px;
+	margin-top: 39px;
 	margin-bottom: 40px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 920px;
-	line-height: 250px;
+	background: url(../images/stock/macaroons_banner.jpg) no-repeat bottom;
+	height: 254px;
+	display: flex;
+	flex-direction: row;
+}
+
+.topBanner p
+{
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	background: none;
+}
+
+.topBantop
+{
+	margin-top: 74px;
+	margin-left: 409px;
+}
+
+#topBanT1
+{
+	font-size: 27px;
+	font-weight: normal;
+	width: 295px;
+	height: 52px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+#topBanT2
+{
+	font-size: 55px;
+	text-align: left;
+	letter-spacing: 6px;
+	margin-top: 5px;
+}
+
+#topBanT3
+{
+	font-size: 150px;
+	margin-top: 35px;
+	margin-left: -20px;
 }
 
 .aboutLB
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	margin-bottom: 36px;
+	justify-content: space-around;
+	margin-bottom: 80px;
 }
 
-.aboutLBLeft, .aboutLBRight
+.aboutLBLeft
 {
-	line-height: 382px;
-	width: 440px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+} 
+
+.aboutLBLeft img
+{
+	width: 200px;
+	height: 300px;
+	margin-top: 45px;
+	margin-left: -240px;
+	z-index: 2;
 }
 
+.borderBox
+{
+	border: 2px solid #73c2b3;
+	width: 353px;
+	height: 381px;
+	position: absolute;
+	margin-left: 40px; 
+/*	padding-left: 148px;*/
+}
+
+.borderBox h4
+{
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	background: none;
+	color: #73c2b3;
+	font-size: 22px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	padding-left: 140px;
+	padding-top: 10px;
+}
+
+.borderBox p
+{
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	background: none;
+	color: #5c5d60;
+	width: 170px;
+	height: 154px;
+	font-size: 17px;
+	text-align: left;
+	font-weight: 500;
+	word-spacing: -1px;
+	padding-left: 140px;
+	line-height: 1.3;
+	margin-top: -10px;
+}
+
+.aboutLBRight
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+}
+
+.aboutLBRight img
+{
+	width: 200px;
+	height: 300px;
+	margin-top: 45px;
+	margin-left: -240px;
+	z-index: 2;
+}
 
 /*Explore Desserts Page*/
 .mainPosts
