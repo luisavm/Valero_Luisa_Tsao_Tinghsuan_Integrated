@@ -2,115 +2,182 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>EXPLORE DESSERTS</title>
+<title>Explpre desserts</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
+    <div class="container">
+        <div id="topBar"></div><!-- the top aqua part -->
 
-<!-- Start wrapper -->
-<div class="container">
-<!-- the top green part -->
-<section id="topBar"></section>
-
-<!--start header-->
-<header class="mainHeader">
-            <!--London Bakerology logo-->
+        <header class="mainHeader">
+            <h1 class="hidden">London Bakerology</h1>
             <div id="logo">
-              <h1 class="hidden">London Bakerology Logo</h1>
-              <img src="images/london_bakerology_logo.svg" width="90" height="104">
+              <img src="images/london_bakerology_logo.svg" alt="London Bakerology Logo" id=lbLogo>
             </div>
+            <div class="headerRight">
+                <section class="socialMedia">
+                    <h2 class="hidden">Social Media</h2>
+                    <!--twitter-->
+                        <a href="http://www.twitter.com">
+                        <img src="images/twitter.svg" alt="Twitter" id="twitter">
+                        </a>
 
-            <!--Start social media-->
-            <section class="headerRight">
+                    <!--facebook-->
+                        <a href="http://www.facebook.com">
+                        <img src="images/facebook.svg" alt="Facebook" id="facebook">
+                        </a>
 
-              <div class="socialMedia">
-                <h2 class="hidden">Social Media</h2>
+                    <!--Instagram-->
+                        <a href="http://www.instagram.com">
+                        <img src="images/instagram.svg" alt="Instagram" id="instagram">
+                        </a>
+                </section> <!--End social media-->
 
-                <!--social media icons-->
-                <section class="iconNav">
-                <!--twitter-->
-                <a href="http://www.twitter.com">
-                <img src="images/twitter.svg" alt="Twitter" id="twitter">
-                </a>
-
-                <!--facebook-->
-                <a href="http://www.facebook.com">
-                <img src="images/facebook.svg" alt="Facebook" id="facebook">
-                </a>
-
-                <!--Instagram-->
-                <a href="http://www.instagram.com">
-                <img src="images/instagram.svg" alt="Instagram" id="instagram">
-                </a>
-              </section> <!-- End social media icons-->
-            </div> <!--End social media-->
-
-                <!--navigation-->
                 <nav class="mainNav">
-                  <h2 class="hidden">Main Navigation</h2>
-                  <ul>
-                      <li><a href="home.html">HOME</a></li>
-                      <li><a href="explore_desserts.html">EXPLORE DESSERTS</a></li>
-                      <li><a href="#">ABOUT</a></li>
-                      <li><a href="contact.html">CONTACT</a></li>
-                  </ul>
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="explore_desserts.html">EXPLORE DESSERTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
                 </nav>
-            </section> <!--End navigation-->
-</header><!--End header-->
+              </div>
+               </header>
 
-<div class="mainPosts">
-            <!--Left Column-->
-            <section class="post1">
-              <!--Left picture of Boston cupcake-->
-                  <h2 class="hidden"> Boston Cupcakes </h2>
-                  <img src="images/boombox_bakeshop.jpg" alt="Boston Cupcakes" id="BostonCupcakes">
+                <div id="mainPosts"> <!--Start main posts-->
 
-             <!--Right picture of two cupcakes-->
-                  <h2 class="hidden"> Two Cupcakes </h2>
-                  <img src="images/two_cupcakes.jpg" alt="Two cupcakes" id="twoCupcakes">
+                 <!--The boombox bakeshop  -->
+                 <!--Left Column-->
+                  <section class="bakeStore">
+                  <h2 class="hidden"> Bakery Store </h2>
 
-             <!--Review desserts-->
+                  <!--Left picture of Boston cupcake-->
+                  <div class="dessertPicture"> <img src="images/boombox_bakeshop.jpg" alt="Boston Cupcakes"> </div>
+
+                 <!--Right picture of two cupcakes-->
+                  <div class="dessertPicture"> <img src="images/two_cupcakes.jpg" alt="Two cupcakes"> </div>
+
+                  <!--Review desserts and aqua border-->
                  <section class="reviewDesserts">
-                  <h2 class= "boomBoxBakeshop"> THE BOOMBOX BAKESHOP </h2>
-                  <ul id="description">
+                  <h2 class="title2"> THE BOOMBOX BAKESHOP </h2>
+                  <h3 class="hidden"> Reviews </h3>
+                  <ul class="descriptionReview">
                     <li> <i>520 Adelaide St N, London, ON N6B 3J4</i> </li>
-                    <li> <span class="boldTitle"> Time:</span> <p class="description1"> 9:30a.m.-5:30p.m.</p></li>
+                    <li> <span class="boldTitle"> Time:</span> <p class="description1"> 9:30a.m.- 5:30p.m.</p></li>
                     <li> <span class="boldTitle"> Price:</span>  <p class="description1"> $3.25 / each, $17/ half dozen, $33/ dozen </p></li>
-                    <li> <span class="boldTitle"> Sweetness:</span> <p class="description1">8/10</p></li>
+                    <li> <span class="boldTitle"> Quality:</span> <p class="description1">8/10</p></li>
                     <li> <span class="boldTitle"> Environment:</span> <p class="description1">very nice and cozy, not a lot of seats,
                     welcomed to stay for a long time, wide and feels comfortable, nice people.</p></li>
                   </ul>
+                  </section>
+                  </section>
+
+
+                  <!--Petiti Paris creperie & patisserie  -->
+                  <!--Right column-->
+                  <section class="bakeStore">
+                  <h2 class="hidden"> Bakery Store </h2>
+
+                  <!--Left picture of Desserts and macarons-->
+                  <div class="dessertPicture"> <img src="images/desserts.jpg" alt="Desserts"> </div>
+
+                 <!--Right picture of Turtle dessert-->
+                  <div class="dessertPicture"> <img src="images/turtle_dessert.jpg" alt="Turtle dessert"> </div>
+
+                <!--Review desserts and aqua border-->
+                  <section class="reviewDesserts">
+                  <h2 class= "title2"> PETIT PARIS CREPERIE & PATISSERIE </h2>
+                  <h3 class="hidden"> Reviews </h3>
+                 <ul class="descriptionReview">
+                  <li> <i>130 King St, London, ON N6A 1C3</i> </li>
+                  <li> <span class="boldTitle"> Time:</span> <p class="description1"> 11:00 am - 4:00pm.</p></li>
+                  <li> <span class="boldTitle"> Price:</span>  <p class="description1"> $1.85, $3.95 pawn size desserts </p></li>
+                  <li> <span class="boldTitle"> Quality</span> <p class="description1">7/10</p></li>
+                  <li> <span class="boldTitle"> Environment:</span> <p class="description1">lively, cold sometimes,
+                    not a lot of seating, seating not so comfortable, enough lighting, can't stay for a long time.</p></li>
+                </ul>
                 </section><!--End review desserts-->
 
-           </section>
+                </section> <!--Bake store-->
 
 
-            <section class="post2">
-                <p>Dessert Place 2 Pictures and Text</p>
+                      <!--Razzle Dazzle Cupcakes  -->
+                      <!--Left column-->
+                      <section class="bakeStore">
+                      <h2 class="hidden"> Bakery Store </h2>
+                      <!--Left picture of cupcakes-->
+                      <div class="dessertPicture"> <img src="images/razzle_dazzle_cupcakes.jpg" alt="Desserts"> </div>
+
+                      <!--Right picture of camarel cupcake-->
+                      <div class="dessertPicture"> <img src="images/caramel_cupcake.jpg" alt="Turtle dessert"> </div>
+
+                      <!--Review desserts and aqua border-->
+                      <section class="reviewDesserts">
+
+                      <h2 class= "title2"> RAZZLE DAZZLE CUPCAKES </h2>
+                      <h3 class="hidden"> Reviews </h3>
+                      <ul class="descriptionReview">
+                          <li> <i>745 Waterloo St, London, ON N6A 3W2</i> </li>
+                          <li> <span class="boldTitle"> Time:</span> <p class="description1"> 9:30 am - 6:00 pm </p></li>
+                          <li> <span class="boldTitle"> Price:</span>  <p class="description1"> $3.75, $7.50, $15, $22.50, $42 </p></li>
+                          <li> <span class="boldTitle"> Quality</span> <p class="description1">8/10</p></li>
+                          <li> <span class="boldTitle"> Environment:</span> <p class="description1">no where to sit, nice decorated store,
+                            there's also chocolates, very warm feeling store, makes you feel like cupcakes are homemade.</p></li>
+                      </ul>
+                      </section><!--End review desserts-->
+                      </section> <!--Bake store-->
+
+
+                      <!--Black Walnut Bakery Cafe -->
+                      <!--Right column-->
+                      <section class="bakeStore">
+                      <h2 class="hidden"> Bakery Store </h2>
+
+                      <!--Left picture of bottles of iced teas and coffee-->
+                      <div class="dessertPicture"> <img src="images/decoration.jpg" alt="Desserts"> </div>
+
+                      <!--Right picture of camarel cupcake-->
+                      <div class="dessertPicture"> <img src="images/bakery.jpg" alt="Turtle dessert"> </div>
+
+                      <!--Review desserts and aqua border-->
+                      <section class="reviewDesserts">
+
+                      <h2 class= "title2"> BLACK WALNUT BAKERY CAFE </h2>
+                      <h3 class="hidden"> Reviews </h3>
+                      <ul class="descriptionReview">
+                          <li> <i>745 Waterloo St, London, ON N6A 3W2</i> </li>
+                          <li> <span class="boldTitle"> Time:</span> <p class="description1"> 7:30 am - 6:00 pm </p></li>
+                          <li> <span class="boldTitle"> Price:</span>  <p class="description1"> $3.75, $12 - not a lot of desserts, there's lemon squares. </p></li>
+                          <li> <span class="boldTitle"> Quality</span> <p class="description1"> good croissants, 7/10</p></li>
+                          <li> <span class="boldTitle"> Environment:</span> <p class="description1">beautiful exterior appearance, interior is also very nice and warm looking, a lot of seats,
+                          mostly ppl stay for conversations instead of works, nice location.</p></li>
+                      </ul>
+                      </section><!--End review desserts-->
+                      </section> <!--Bake store-->
+
+                    </div><!--End main post-->
+
+            <!--Footer-->
+             <footer class="mainFooter">
+              <nav class="mainFooterNav">
+                <h2 class="hidden">Main Footer Navigation</h2>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="explore_desserts.html">EXPLORE DESSERTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </nav>
+            <section class="copyRight">
+                <img src="images/london_bakerology_symbol.svg"  alt="London Bakerology Symbol" id="lbsymbol">
+                <div class="copyrightTexts">
+                <h4 class="hidden">London Bakerology.©2018. All Rights Reserved.</h4>
+                <p id="CRtop">London Bakerology.©2018.</p>
+                <p id="CRbot">All Rights Reserved.</p>
+                </div>
             </section>
-
-            <section class="post3">
-                <p>Dessert Place 3 Pictures and Text</p>
-            </section>
-
-            <section class="post4">
-                <p>Dessert Place 4 Pictures and Text</p>
-            </section>
-        </div>
-
-
-         <!--Footer-->
-        <footer class="mainFooter">
-            <div class="footerNav">
-                <p>Footer Nav</p>
-            </div>
-            <div class="copyRight">
-                <p>Copyright Text and Logo</p>
-            </div>
         </footer>
-
-    </div>
-    <!--End wrapper  -->
-<!-- <script src="js/main.js"></script> -->
+</div> <!--End div-->
 </body>
 </html>
