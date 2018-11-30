@@ -129,6 +129,11 @@ a:hover, a:active
 
 }
 
+#twitter:hover, #facebook:hover, #instagram:hover
+{
+	background-color: #aadad1;
+}
+
 /* navigation */
 .mainNav
 {/* Font styles from Google fonts */
@@ -313,13 +318,60 @@ a:hover, a:active
 	position: relative;
 } 
 
-.aboutLBLeft img
+#picturesHover
+{
+	position: relative;
+	z-index: 4;
+	margin-left: 25px;
+}
+
+#bgPink
+{
+	background-color: rgba(242, 151, 148);
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	margin-top: 45px;
+	margin-left: -235px;
+	z-index: -1;
+}
+
+#picturesHover img
 {
 	width: 200px;
 	height: 300px;
 	margin-top: 45px;
-	margin-left: -240px;
-	z-index: 2;
+	margin-left: -235px;
+	z-index: 3;
+}
+
+#hoverText
+{
+	visibility: hidden;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+	color: #5c5d60;
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	padding-top: 12px;
+	margin-top: -170px;
+	margin-left: -235px;
+	letter-spacing: 1px;
+	opacity: 0;
+}
+
+#picturesHover:hover #hoverText
+{
+	background-color: #f5f1ee;
+	width: 200px;
+	height: 30px;
+	visibility: visible;
+	opacity: 1;
+}
+
+#picturesHover:hover img
+{
+	opacity: 0.9;
 }
 
 .borderBox
@@ -376,6 +428,7 @@ a:hover, a:active
 	margin-left: -240px;
 	z-index: 2;
 }
+
 
 /*Explore Desserts Page*/
 .mainPosts
