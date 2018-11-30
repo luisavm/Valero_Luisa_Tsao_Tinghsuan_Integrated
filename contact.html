@@ -46,12 +46,43 @@
         </header>
 
         <div class="mainCon">
-            <section class="contactUs">
-                <p>Contact Form</p>
+                    
+            <section class="contactArea">
+                <h2>CONTACT US</h2>
+                <h2 class="hidden">Contact form</h2>
+                <section class="contactText">
+                    <h3>GET IN TOUCH</h3>
+                    <p>We would love to hear from you. Feel free to call, send us an email, tweet us or simply complete the enquire form.</p>
+                </section> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" required id="name" name="fullName" size="30">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" size="30">
+                    
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" required id="phone" size="30">
+                    <div id="message">
+                    <label for="comments">Message</label>
+                    </div>
+                    <textarea name="comments" id="comments" required></textarea>
+                   
+                    <input id="submit" type="submit" value="SEND MESSAGE">
+            </form>
             </section>
 
             <section class="LBInfo">
-                <p>London Bakerology Info</p>
+                <h2 class="hidden">London Bakerology Information</h2>
+                <img src="images/stock/baked_baking_blur.jpg" alt="baked baking blur">
+                <div class="infoBorder">
+                <ul>
+                    <li><span>Email:</span><p>hello@londonbakerology.com</p></li>
+                    <li><span>Toll Free:</span><p>1 (800) 712-2393</p></li>
+                    <li><span>Phone:</span><p>1 (800) 712-2393</p></li>
+                </ul>
+                </div>
             </section>
         </div>
         
